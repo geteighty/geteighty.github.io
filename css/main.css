@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    color: #3f4447;
 }
 
 html, body {
@@ -60,6 +61,14 @@ textarea {
     padding: 0.2em 0;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
 
 /* ===== Initializr Styles ==================================================
    ========================================================================== */
@@ -72,6 +81,10 @@ body {
 .wrapper {
     width: 90%;
     margin: 0 5%;
+}
+
+.header-container {
+    margin-top: 20px;
 }
 
 .footer-container footer {
@@ -91,27 +104,71 @@ body {
    Author's custom styles
    ========================================================================== */
 
+#about {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+}
 
 .logo {
     color: #3f4447;
-    font-size: 120px;
-    width: 216px;
-    height: 120px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -108px;
-    margin-top: -60px;
+    font-size: 42px;
 }
 
+.twitter-button {
+    width: 33px;
+    height: 33px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    border: 2px solid #d59a5e;
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+}
 
+.twitter-button a {
+    text-decoration: none;
+    color: #d59a5e;
+    display: block;
+    padding: 8px;
+}
 
+.header-signup {
+    margin-top: -300px;
+}
 
+h1 {
+    font-size: 60px;
+    max-width: 440px;
+    line-height: 65px;
+}
 
+.sign-up.input-group {
+    background: #fff;
+    position: absolute;
+    z-index: 11;
+    width: 270px;
+    padding: 20px 10px;
+}
 
+.sign-up.input-group input {
+    border: none;
+    color: #7e959a;
+    padding: 5px;
+}
 
+.sign-up-button {
+    background: none;
+    border: none;
+    color: #d59a5e;
+}
 
-
+.phone {
+    margin-top: -50px;
+}
 
 
 
@@ -145,7 +202,7 @@ body {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1080px;
         margin: 0 auto;
     }
 }
@@ -337,3 +394,55 @@ you can use the generic selector below, but it's slower:
 .icon-arrow_down:before {
     content: "\e004";
 }
+
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
