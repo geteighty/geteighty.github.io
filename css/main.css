@@ -182,6 +182,10 @@ a.about {
 
 @media only screen and (max-width: 480px) {
 
+    header {
+        position: relative;
+    }
+
     .signup h1 {
         font-size: 26px;
         line-height: 32px;
