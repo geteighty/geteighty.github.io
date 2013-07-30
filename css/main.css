@@ -179,16 +179,8 @@ a.about {
 
 @media only screen and (min-width: 480px) {
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
+    .signup h1 {
+        font-size: 22px;       
     }
 }
 
