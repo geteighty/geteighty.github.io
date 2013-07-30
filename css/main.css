@@ -69,8 +69,8 @@ textarea {
     float: right;
 }
 
-
-/* ===== Initializr Styles ==================================================
+/* ==========================================================================
+   Author's custom styles
    ========================================================================== */
 
 body {
@@ -78,86 +78,80 @@ body {
     background-color: #becccf;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
+header, footer {
+    position: fixed;
+    width: 100%;
 }
 
-.header-container {
-    margin-top: 20px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-#about {
-    display: none;
-}
-
-.wrapper {
-    position: relative;
+header {
+    top: 0px;
 }
 
 .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: #3f4447;
     font-size: 42px;
 }
 
 .twitter-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
     width: 33px;
     height: 33px;
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
     border: 2px solid #d59a5e;
-    position: absolute;
-    z-index: 10;
-    right: 0px;
 }
 
-.twitter-button a {
-    text-decoration: none;
-    color: #d59a5e;
-    display: block;
-    padding: 8px;
+    .twitter-button a {
+        text-decoration: none;
+        color: #d59a5e;
+        display: block;
+        padding: 8px;
+    }
+
+#main {
+    height: 100%;
 }
 
-.header-signup {
-    margin-top: -300px;
+#about {
+    background: #3f4447;
 }
 
-h1 {
-    font-size: 60px;
-    max-width: 440px;
-    line-height: 65px;
+.signup {
+    margin-top: 70px;
 }
 
-.sign-up.input-group {
-    background: #fff;
-    position: absolute;
-    z-index: 11;
-    width: 270px;
-    padding: 20px 10px;
-}
+    .signup h1 {
+        font-size: 60px;
+        max-width: 440px;
+        line-height: 65px;
+        margin: 20px auto;
+        text-align: center;
+    }
 
-.sign-up.input-group input {
-    border: none;
-    color: #7e959a;
-    padding: 5px;
+
+    .signup .input-group {
+        background: #fff;
+        width: 270px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+        .signup .input-group input {
+            border: none;
+            color: #7e959a;
+            padding: 15px 5px;
+        }
+
+.phone {
+    text-align: center;
+    padding: 20px 0;
 }
 
 .sign-up-button {
@@ -166,10 +160,17 @@ h1 {
     color: #d59a5e;
 }
 
-.phone {
-    margin-top: -50px;
+footer {
+    bottom: 0px;
 }
 
+a.about {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 35px;
+}
 
 
 /* ==========================================================================
@@ -200,11 +201,6 @@ h1 {
 /* ===============
     Maximal Width
    =============== */
-
-    .wrapper {
-        width: 1080px;
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
@@ -269,77 +265,6 @@ h1 {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
 @font-face {
     font-family: 'icomoon';
     src:url('fonts/icomoon.eot');
@@ -396,7 +321,6 @@ you can use the generic selector below, but it's slower:
 }
 
 .floating{
-    float: left;
     -webkit-animation-name: Floatingx;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
@@ -405,9 +329,6 @@ you can use the generic selector below, but it's slower:
     -moz-animation-duration: 3s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-
 }
 
 @-webkit-keyframes Floatingx{
@@ -446,3 +367,82 @@ you can use the generic selector below, but it's slower:
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}    
     }
+
+
+/* Caption Style 4 */
+.turn-anim-target {
+    height: 100%;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    perspective: 700px;
+    -webkit-perspective-origin: 0 50%;
+    -moz-perspective-origin: 0 50%;
+    perspective-origin: 0 50%;
+}
+
+.turn-anim-target #main {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin: 0;
+    position: relative;
+}
+
+.turn-anim-target #main > div {
+    overflow: hidden;
+}
+
+.turn-anim-target #main {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .turn-anim-target.in #main,
+.turn-anim-target.in #main {
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.turn-anim-target #about {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -47%;
+    padding: 20px;
+    color: #ed4e6e;
+    height: 200px;
+    width: 90%;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .turn-anim-target.in #about,
+.turn-anim-target.in #about {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.turn-anim-target figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
