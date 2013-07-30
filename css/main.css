@@ -151,7 +151,10 @@ header {
 
 .phone {
     text-align: center;
-    padding: 20px 0;
+}
+
+.phone img {
+    width: 100%;
 }
 
 .sign-up-button {
@@ -177,10 +180,21 @@ a.about {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     .signup h1 {
-        font-size: 22px;       
+        font-size: 26px;
+        line-height: 32px;
+        margin: 10px auto;
+    }
+
+    .signup .input-group input {
+        padding: 5px;
+    }
+
+    .phone img {
+        width: 120%;
+        margin-left: -10%;
     }
 }
 
