@@ -570,7 +570,7 @@ you can use the generic selector below, but it's slower:
    Animation presets
    ========================================================================== */
 
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes fadeInUp {
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:0.8s;-moz-animation-duration:0.8s;-ms-animation-duration:0.8s;-o-animation-duration:0.8s;animation-duration:0.8s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes fadeInUp {
     0% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -625,7 +625,7 @@ you can use the generic selector below, but it's slower:
 @-webkit-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(-20px);
+        -webkit-transform: translateY(-100px);
     }
     
     100% {
@@ -637,7 +637,7 @@ you can use the generic selector below, but it's slower:
 @-moz-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -moz-transform: translateY(-20px);
+        -moz-transform: translateY(-100px);
     }
     
     100% {
@@ -649,7 +649,7 @@ you can use the generic selector below, but it's slower:
 @-o-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -o-transform: translateY(-20px);
+        -o-transform: translateY(-100px);
     }
     
     100% {
@@ -661,7 +661,7 @@ you can use the generic selector below, but it's slower:
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-100px);
     }
     
     100% {
@@ -733,7 +733,7 @@ you can use the generic selector below, but it's slower:
 @-webkit-keyframes fadeInRight {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(20px);
+        -webkit-transform: translateX(80px);
     }
     
     100% {
@@ -745,7 +745,7 @@ you can use the generic selector below, but it's slower:
 @-moz-keyframes fadeInRight {
     0% {
         opacity: 0;
-        -moz-transform: translateX(20px);
+        -moz-transform: translateX(80px);
     }
     
     100% {
@@ -757,7 +757,7 @@ you can use the generic selector below, but it's slower:
 @-o-keyframes fadeInRight {
     0% {
         opacity: 0;
-        -o-transform: translateX(20px);
+        -o-transform: translateX(80px);
     }
     
     100% {
@@ -769,7 +769,7 @@ you can use the generic selector below, but it's slower:
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(80px);
     }
     
     100% {
