@@ -416,11 +416,8 @@ you can use the generic selector below, but it's slower:
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left: -47%;
-    padding: 20px;
+    margin-left: -50%;
     color: #ed4e6e;
-    height: 200px;
-    width: 90%;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
