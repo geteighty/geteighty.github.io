@@ -90,6 +90,7 @@ header, footer {
 
 header {
     top: 0px;
+    z-index: 1;
 }
 
 .logo {
