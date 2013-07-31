@@ -151,6 +151,7 @@ header {
 
 .phone {
     text-align: center;
+    padding: 20px 0;
 }
 
 .sign-up-button {
@@ -191,6 +192,10 @@ a.about {
 
     .signup .input-group input {
         padding: 5px;
+    }
+    
+    .phone {
+       padding: 10px 0;
     }
 
     .phone img {
