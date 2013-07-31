@@ -271,6 +271,15 @@ a.about {
     color: #3f4447;
 }
 
+a.about-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #3f4447;
+}
 
 /* ==========================================================================
    Media Queries
