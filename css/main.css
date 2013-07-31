@@ -89,10 +89,10 @@ header {
 
 .logo {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     color: #3f4447;
-    font-size: 42px;
+    font-size: 50px;
 }
 
 .twitter-button {
