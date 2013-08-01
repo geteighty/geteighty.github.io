@@ -281,7 +281,7 @@ header {
 
     .signup .input-group {
         background: #fff;
-        width: 280px;
+        width: 320px;
         padding: 3px;
         margin: 30px auto;
         -webkit-animation-delay: 0.8s;
@@ -295,7 +295,7 @@ header {
             border-right-color: #e4e9eb;
             color: #7e959a;
             padding: 20px 8px;
-            width: 200px;
+            width: 223px;
             float: left;
             transition: border-color ease-in-out 0.75s;
         }
@@ -320,6 +320,7 @@ header {
     width: 55px;
     height: 24px;
     display: block;
+    margin-right: 12px;
 }
 
 footer {
