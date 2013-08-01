@@ -366,9 +366,14 @@ a.about-text {
         margin: 10px auto;
     }
 
-    .signup .input-group input {
+    .signup .input-group {
         width: 280px;
     }
+    
+        .signup .input-group input[type=text],
+        .signup .input-group input[type=email] {
+            width: 183px;
+        }    
     
     .phone {
        padding: 10px 0;
