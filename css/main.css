@@ -312,6 +312,9 @@ header {
     font-size: 22px;
     float: right;
     margin-top: 12px;
+   width: 55px;
+   height: 24px;
+   display: block;
 }
 
 footer {
