@@ -372,8 +372,13 @@ a.about-text {
     
         .signup .input-group input[type=text],
         .signup .input-group input[type=email] {
-            width: 183px;
-        }    
+            width: 195px;
+        }
+        
+    .sign-up-button {
+       width: 55px;
+       margin-right: 25px;
+    }        
     
     .phone {
        padding: 10px 0;
