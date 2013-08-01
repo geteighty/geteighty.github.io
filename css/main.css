@@ -311,6 +311,7 @@ header {
 }
 
 .sign-up-button {
+    -webkit-appearance: none;
     background: none;
     border: none;
     color: #d59a5e;
@@ -366,7 +367,7 @@ a.about-text {
     }
 
     .signup .input-group input {
-        padding: 5px;
+        width: 280px;
     }
     
     .phone {
