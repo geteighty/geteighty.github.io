@@ -46,6 +46,14 @@ hr {
 }
 
 h2 {
+    color: #3f4447;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h3 {
     color: #becccf;
     font-size: 26px;
     font-weight: normal;
@@ -132,7 +140,7 @@ header {
     left: 30px;
     color: #3f4447;
     font-size: 50px;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-delay: 1s;
 }
 
 .twitter-button {
@@ -147,7 +155,7 @@ header {
     border-radius: 999px;
     border: 2px solid #d59a5e;
     -webkit-transition: all .2s ease-in-out;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-delay: 1s;
 }
 
 .twitter-button:hover {
@@ -262,12 +270,14 @@ header {
 
     .signup h1 {
         font-size: 60px;
-        max-width: 440px;
         line-height: 65px;
         margin: 20px auto;
         text-align: center;
     }
 
+    .signup h2 {
+        -webkit-animation-delay: 0.5s;
+    }
 
     .signup .input-group {
         background: #fff;
@@ -311,7 +321,7 @@ a.about {
     text-decoration: none;
     font-size: 44px;
     color: #3f4447;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 1.4s;
 }
 
 a.about-text {
@@ -322,7 +332,7 @@ a.about-text {
     font-size: 13px;
     text-transform: uppercase;
     color: #3f4447;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 1.4s;
 }
 
 /* ==========================================================================
@@ -623,6 +633,12 @@ you can use the generic selector below, but it's slower:
         opacity: 1;
         -webkit-transform: translateY(0);
     }
+}
+
+.animated
+{
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
 }
 
 @-moz-keyframes fadeInUp {
