@@ -291,6 +291,8 @@ header {
             border: 1px solid #fff;
             color: #7e959a;
             padding: 15px 5px;
+            width: 200px;
+            float: left;
         }
 
         .signup .input-group input:focus {
@@ -308,6 +310,8 @@ header {
     border: none;
     color: #d59a5e;
     font-size: 22px;
+    float: left;
+    margin-top: 13px;
 }
 
 footer {
