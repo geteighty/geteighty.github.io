@@ -290,6 +290,7 @@ header {
 
     .signup .input-group {
         background: #fff;
+        font-family: "proxima-nova";
         width: 320px;
         padding: 3px;
         margin: 30px auto;
