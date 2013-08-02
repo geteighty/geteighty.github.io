@@ -390,7 +390,25 @@ a.about-text {
 	   padding: 0;
 	   margin-right: 7px;
     }        
-    
+
+    .logo {
+        top: 15px;
+        left: 15px;
+    }
+
+    .twitter-button {
+        top: 15px;
+        right: 15px;
+    }    
+
+    a.about {
+        bottom: 15px;
+        right: 15px;
+    }
+        bottom: 15px;
+        left: 15px;
+    }
+
     .phone {
        padding: 10px 0;
     }
