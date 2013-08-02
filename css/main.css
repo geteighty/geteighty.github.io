@@ -364,8 +364,16 @@ a.about-text {
     }
 
     .signup h1 {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 34px;
+        line-height: 38px;
+        margin: 20px auto;
+        max-width: 300px;
+    }
+
+    .signup h2 {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px;
         margin: 10px auto;
     }
 
