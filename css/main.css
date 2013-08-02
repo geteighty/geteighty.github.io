@@ -127,7 +127,7 @@ textarea {
 
 body {
     font: 16px/26px;
-    font-family: "proxima-nova";
+    font-family: "proxima-nova", sans-serif;
     background-color: #becccf;
 }
 
