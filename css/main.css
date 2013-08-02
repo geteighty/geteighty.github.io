@@ -404,6 +404,16 @@ a.about-text {
      .twitter-button:hover {
         top: 15px;
         right: 15px;
+    }
+
+    .close-button {
+        top: 15px;
+        right: 15px;
+    }
+
+     .close-button:hover {
+        top: 15px;
+        right: 15px;
     }    
 
     a.about {
