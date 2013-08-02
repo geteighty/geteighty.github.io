@@ -350,6 +350,13 @@ a.about {
     -webkit-animation-delay: 1.4s;
 }
 
+a.about:hover {
+    bottom: 33px;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+
+
 a.about-text {
     position: absolute;
     bottom: 30px;
@@ -398,7 +405,15 @@ a.about-text {
     .sign-up-button {
 	   padding: 0;
 	   margin-right: 7px;
-    }        
+    }       
+
+
+    .sign-up-button:hover {
+        padding-right: 10px;
+        -webkit-transition: all .2s ease-in-out;
+        color: #000;
+    }
+ 
 
     .logo {
         top: 15px;
