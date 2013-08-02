@@ -47,10 +47,11 @@ hr {
 
 h2 {
     color: #3f4447;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
-    text-align: center;
     margin-top: 30px;
+    max-width: 660px;
+    text-align: center;
 }
 
 h3 {
@@ -277,6 +278,7 @@ header {
 
     .signup h2 {
         -webkit-animation-delay: 0.5s;
+        margin: 0 auto;
     }
 
     .signup .input-group {
@@ -303,6 +305,7 @@ header {
         .signup .input-group input:focus {
             outline: none;
             border-color: #d59a5e;
+            color: #d59a5e;
         }
 
 .phone {
