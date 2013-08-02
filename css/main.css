@@ -399,6 +399,11 @@ a.about-text {
     .twitter-button {
         top: 15px;
         right: 15px;
+    }
+
+     .twitter-button:hover {
+        top: 15px;
+        right: 15px;
     }    
 
     a.about {
