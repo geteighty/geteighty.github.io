@@ -14,7 +14,6 @@ body {
     font-size: 1em;
     line-height: 1.4;
     color: #3f4447;
-    font-family: "proxima-nova";
 }
 
 body
@@ -53,6 +52,7 @@ h2 {
     margin-top: 30px;
     max-width: 660px;
     text-align: center;
+    font-family: "proxima-nova";
 }
 
 h3 {
