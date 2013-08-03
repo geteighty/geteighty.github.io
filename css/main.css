@@ -336,6 +336,12 @@ header {
     margin-right: 12px;
 }
 
+
+.sign-up-button:hover {
+        margin-right: 9px;
+        -webkit-transition: all .2s ease-in-out;
+}
+
 footer {
     bottom: 0px;
 }
@@ -405,15 +411,12 @@ a.about-text {
     .sign-up-button {
 	   padding: 0;
 	   margin-right: 7px;
-    }       
-
-
-    .sign-up-button:hover {
         padding-right: 10px;
         -webkit-transition: all .2s ease-in-out;
         color: #000;
     }
  
+    }        
 
     .logo {
         top: 15px;
