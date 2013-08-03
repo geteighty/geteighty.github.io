@@ -411,11 +411,6 @@ a.about-text {
     .sign-up-button {
 	   padding: 0;
 	   margin-right: 7px;
-        padding-right: 10px;
-        -webkit-transition: all .2s ease-in-out;
-        color: #000;
-    }
- 
     }        
 
     .logo {
