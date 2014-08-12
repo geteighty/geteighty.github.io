@@ -1,11 +1,16 @@
 .eighty-nav {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;  
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .eighty-nav nav li > a:hover, .eighty-nav nav li > a:focus {
   text-decoration: none;
   background-color: transparent;
+}
+
+.onepage-pagination {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 .animated.animated-2s {
