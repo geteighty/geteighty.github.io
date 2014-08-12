@@ -1,12 +1,12 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+name: "80™ – Mileage Book for Business Trips"
+title: "Mileage Book for Business Trips"
+email: "info@geteighty.com"
+description: "Keep track of your driving and export your trips when you need to file expense reports, do your taxes or other deductions"
+baseurl: "http://geteighty.com/"
+twitter_username: geteighty
+github_username:  geteighty
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title.html
