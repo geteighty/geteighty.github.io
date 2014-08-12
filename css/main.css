@@ -8,6 +8,11 @@
   background-color: transparent;
 }
 
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .onepage-pagination {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
