@@ -1,7 +1,14 @@
-@font-face {
-  font-family: Gotham;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  src: url("fonts/GothamBook.otf") format("opentype");
+.eighty-nav {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;  
+}
+
+.eighty-nav nav li > a:hover, .eighty-nav nav li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.animated.animated-2s {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
