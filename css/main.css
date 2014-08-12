@@ -22,3 +22,42 @@
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+
+.iphone-container {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  margin-left: -200px;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+}
+
+.iphone-container.animated {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.iphone-container img {
+  position: relative;
+  bottom: -70%;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .9s 0;
+  -moz-transition: -moz-transform .9s 0;
+  transition: transform .9s 0;
+}
+
+.viewing-page-1 .iphone-container img {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.viewing-page-2 .iphone-container img,
+.viewing-page-3 .iphone-container img,
+.viewing-page-4 .iphone-container img {
+  -webkit-transform: translate3d(0, -80%, 0) !important;
+  -moz-transform: translate3d(0, -80%, 0) !important;
+  transform: translate3d(0, -80%, 0) !important;
+}
