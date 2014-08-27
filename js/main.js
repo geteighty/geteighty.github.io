@@ -10,6 +10,10 @@ $(document).ready(function(){
 	   loop: false,
 	   updateURL: false // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
 	});
+
+	window.setTimeout(function() {
+		$("section#intro .center-content-block").addClass("moveTextUp");
+	}, 2500)
 	
 });    
 

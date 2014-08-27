@@ -58,8 +58,10 @@
 }
 
 .iphone-container.animated {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .iphone-container img {
@@ -83,4 +85,50 @@
   -webkit-transform: translate3d(0, -80%, 0) !important;
   -moz-transform: translate3d(0, -80%, 0) !important;
   transform: translate3d(0, -80%, 0) !important;
+}
+
+.center-content-block {
+  margin: 0 auto;
+}
+
+.center-content-block h1,
+.center-content-block p {
+  text-align: center;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;  
+}
+
+.center-content-block h1 {
+  color: #d59b5e;
+}
+
+section {
+  position: relative;
+}
+
+section#intro .center-content-block {
+  position: absolute;
+  width: 600px;
+  margin-top: -130px;
+  margin-left: -300px;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.moveTextUp {
+  -webkit-transform: translate3d(0, -30px, 0);
+  -ms-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);  
+}
+
+section#intro .center-content-block h1 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+section#intro .center-content-block p {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
