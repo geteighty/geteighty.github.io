@@ -16,6 +16,20 @@
 .onepage-pagination {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
+  right: 30px;
+  top: 40%;
+}
+
+.onepage-pagination li a:before {
+  width: 6px !important;
+  height: 6px !important;
+  background: #cedde0 !important;
+  border: none !important;
+  left: 9px !important;
+}
+
+.onepage-pagination li a.active:before {
+  background: #d59b5e !important;
 }
 
 .animated.animated-2s {
@@ -26,8 +40,8 @@
 .iphone-container {
   display: block;
   position: absolute;
-  width: 400px;
-  height: 100%;
+  width: 372px;
+  height: 726px;
   margin-left: -200px;
   z-index: 1;
   top: 0;
