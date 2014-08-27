@@ -20,16 +20,25 @@
   top: 40%;
 }
 
+.onepage-pagination li a {
+  width: 6px;
+  height: 6px;
+  left: 9px;
+}
+
+.onepage-pagination li a.active {
+  border: 0;
+}
+
 .onepage-pagination li a:before {
-  width: 6px !important;
-  height: 6px !important;
-  background: #cedde0 !important;
-  border: none !important;
-  left: 9px !important;
+  width: 6px;
+  height: 6px;
+  background: #cedde0;
 }
 
 .onepage-pagination li a.active:before {
-  background: #d59b5e !important;
+  background: #d59b5e;
+  border: 0;
 }
 
 .animated.animated-2s {
