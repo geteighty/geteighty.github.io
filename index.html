@@ -36,5 +36,12 @@ layout: default
 </div>
 
 <div class="iphone-container animated fadeIn">
-  <img class="green" src="{{ "/img/iphone.png" | prepend: site.baseurl }}" alt="iPhone">
+  <div class="phone-video-container">
+    <img class="green" src="{{ "/img/iphone.png" | prepend: site.baseurl }}" alt="iPhone">
+    <div class="video-container">
+      <video class="preview-video" preload controls autoplay>
+        <source src="{{ "/video/record.mov" | prepend: site.baseurl }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      </video>
+    </div>
+  </div>
 </div>

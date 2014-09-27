@@ -53,8 +53,12 @@
   height: 726px;
   margin-left: -200px;
   z-index: 1;
-  top: 0;
+  top: 65%;
   left: 50%;
+
+  -webkit-transition: -webkit-transform .9s 0;
+  -moz-transition: -moz-transform .9s 0;
+  transition: transform .9s 0;  
 }
 
 .iphone-container.animated {
@@ -64,24 +68,37 @@
   animation-duration: 2s;
 }
 
-.iphone-container img {
+.phone-video-container {
   position: relative;
-  bottom: -70%;
-  z-index: 1;
-  -webkit-transition: -webkit-transform .9s 0;
-  -moz-transition: -moz-transform .9s 0;
-  transition: transform .9s 0;
 }
 
-.viewing-page-1 .iphone-container img {
+.phone-video-container img,
+.phone-video-container .video-container {
+  position: absolute;
+  top: 0px;
+}
+
+.phone-video-container .video-container {
+  width: 265px;
+  height: 469px;
+  top: 133px;
+  left: 46px;
+  overflow: hidden;
+}
+
+.phone-video-container .video-container video {
+  width: 265px;
+}
+
+.viewing-page-1 .iphone-container {
   -webkit-transform: translate3d(0, 0, 0) !important;
   -moz-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
 
-.viewing-page-2 .iphone-container img,
-.viewing-page-3 .iphone-container img,
-.viewing-page-4 .iphone-container img {
+.viewing-page-2 .iphone-container,
+.viewing-page-3 .iphone-container,
+.viewing-page-4 .iphone-container {
   -webkit-transform: translate3d(0, -70%, 0) !important;
   -moz-transform: translate3d(0, -70%, 0) !important;
   transform: translate3d(0, -70%, 0) !important;
