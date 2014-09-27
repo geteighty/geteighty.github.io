@@ -82,9 +82,9 @@
 .viewing-page-2 .iphone-container img,
 .viewing-page-3 .iphone-container img,
 .viewing-page-4 .iphone-container img {
-  -webkit-transform: translate3d(0, -80%, 0) !important;
-  -moz-transform: translate3d(0, -80%, 0) !important;
-  transform: translate3d(0, -80%, 0) !important;
+  -webkit-transform: translate3d(0, -70%, 0) !important;
+  -moz-transform: translate3d(0, -70%, 0) !important;
+  transform: translate3d(0, -70%, 0) !important;
 }
 
 .center-content-block {
