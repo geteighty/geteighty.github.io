@@ -46,6 +46,19 @@
   animation-duration: 2s;
 }
 
+.play-button {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  margin: 0 auto;
+  background-color: #d59b5e;
+}
+
+.play-button img {
+
+}
+
 .iphone-container {
   display: block;
   position: absolute;
@@ -107,7 +120,8 @@
 }
 
 .center-content-block h1,
-.center-content-block p {
+.center-content-block p,
+.center-content-block a {
   text-align: center;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;  
@@ -146,4 +160,9 @@ section#intro .center-content-block h1 {
 section#intro .center-content-block p {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
+}
+
+section#intro .center-content-block a {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
 }
