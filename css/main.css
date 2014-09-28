@@ -166,3 +166,13 @@ section#intro .center-content-block a {
   -webkit-animation-delay: 2.2s;
   animation-delay: 2.2s;
 }
+
+@media (max-width: 900px) {
+  .viewing-page-2 .iphone-container,
+  .viewing-page-3 .iphone-container,
+  .viewing-page-4 .iphone-container {
+    -webkit-transform: translate3d(35%, -70%, 0) !important;
+    -moz-transform: translate3d(35%, -70%, 0) !important;
+    transform: translate3d(35%, -70%, 0) !important;
+  }
+}
