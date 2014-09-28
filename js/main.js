@@ -1,20 +1,31 @@
 (function() {
 
-$(document).ready(function(){
+	var $scrollContainer, $videoContainer, $videoTag;
 
-	$(".main").onepage_scroll({
-	   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
-	   easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-	   animationTime: 900, // AnimationTime let you define how long each section takes to animate
-	   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
-	   loop: false,
-	   updateURL: false // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+	$(document).ready(function() {
+
+		$scrollContainer = $(".main");
+		$videoContainer = $("div.video-container");
+		$videoTag = $videoContainer.find("video");
+
+		$(".main").onepage_scroll({
+		   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+		   easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+		   animationTime: 900, // AnimationTime let you define how long each section takes to animate
+		   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+		   loop: false,
+		   updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+		   afterMove: onPageScrolled
+		});
+
+		window.setTimeout(function() {
+			$("section#intro .center-content-block").addClass("moveTextUp");
+		}, 2500)
+		
 	});
 
-	window.setTimeout(function() {
-		$("section#intro .center-content-block").addClass("moveTextUp");
-	}, 2500)
-	
-});    
+	function onPageScrolled(pageIndex) {
+		console.log("scrolled %f", pageIndex);
+	}
 
 })();
