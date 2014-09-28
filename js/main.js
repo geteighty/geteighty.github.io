@@ -1,12 +1,14 @@
 (function() {
 
-	var $scrollContainer, $videoContainer, $videoTag;
+	var $scrollContainer, $videoContainer, $videoTag, isPlayingVideo = false, currentVideoName = "";
 
 	$(document).ready(function() {
 
 		$scrollContainer = $(".main");
 		$videoContainer = $("div.video-container");
 		$videoTag = $videoContainer.find("video");
+
+		$("article").on("click", "a[href=#play-video]", onVideoLink_Clicked);
 
 		$(".main").onepage_scroll({
 		   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -26,6 +28,12 @@
 
 	function onPageScrolled(pageIndex) {
 		console.log("scrolled %f", pageIndex);
+	}
+
+	function onVideoLink_Clicked(event) {
+		event.preventDefault();
+
+		console.log($(event.target).data("video"));
 	}
 
 })();
