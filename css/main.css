@@ -1,3 +1,11 @@
+
+.container-fluid {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px
+}
+
+
 .eighty-nav {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
@@ -6,6 +14,19 @@
 .eighty-nav nav li > a:hover, .eighty-nav nav li > a:focus {
   text-decoration: none;
   background-color: transparent;
+}
+
+.eighty-nav nav li > a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
+  margin-top: 5px;
+}
+
+.eighty-nav nav li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
 }
 
 .page-wrapper {
@@ -56,7 +77,11 @@
 }
 
 .play-button img {
+}
 
+.green
+{
+  margin-left: -52px;
 }
 
 .iphone-container {
@@ -93,8 +118,8 @@
 
 .phone-video-container .video-container {
   width: 265px;
-  top: 133px;
-  left: 46px;
+  top: 76px;
+  left: 43px;
 }
 
 .phone-video-container .video-container video {
@@ -129,6 +154,18 @@
 
 .center-content-block h1 {
   color: #d59b5e;
+  font-weight: 200;
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.center-content-block p {
+  color: #000;
+  font-weight: 200;
+  font-size: 1.4em;
+  line-height: 1.25em;
+  letter-spacing: 0px;
+  margin-bottom: 36px;
 }
 
 section {
@@ -137,9 +174,9 @@ section {
 
 section#intro .center-content-block {
   position: absolute;
-  width: 600px;
+  width: 780px;
   margin-top: -130px;
-  margin-left: -300px;
+  margin-left: -390px;
   top: 50%;
   left: 50%;
   -webkit-transition: all 1s ease-in-out;
@@ -147,9 +184,9 @@ section#intro .center-content-block {
 }
 
 .moveTextUp {
-  -webkit-transform: translate3d(0, -30px, 0);
-  -ms-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);  
+  -webkit-transform: translate3d(0, -110px, 0);
+  -ms-transform: translate3d(0, -110px, 0);
+  transform: translate3d(0, -110px, 0);  
 }
 
 section#intro .center-content-block h1 {
@@ -170,15 +207,21 @@ section#intro .center-content-block a {
 section > article {
   position: absolute;
   bottom: 30%;
-  left: 15px;
+  left: 6%;
 }
 
 article > h2 {
   color: #d59b5e;
+  font-weight: 200;
+  font-size: 2.4em;
+  letter-spacing: 0px;
 }
 
 article > p {
-  max-width: 370px;
+  max-width: 300px;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  font-weight: 200;
 }
 
 ul.videos {
