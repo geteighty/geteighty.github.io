@@ -1,9 +1,15 @@
 <footer class="site-footer">
   <ul class="unstyled nav navbar-nav">
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/press">Press</a></li>
-    <li><a href="/blog">Blog</a></li>
+  {% assign sorted_pages = site.pages | sort:"sortOrder" %}
+  {% for node in sorted_pages %}
+  {% if node.showInNavBar %}
+  {% if page.url == node.url %}
+    <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+  {% else %}
+    <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
   </ul>
   <ul class="unstyled nav navbar-nav navbar-right">
     <li>Copyright &copy; {{ site.time | date: '%Y' }} – 80&trade;</li>

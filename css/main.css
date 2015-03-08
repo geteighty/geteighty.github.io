@@ -272,6 +272,10 @@ ul.videos > li > a:hover > img {
   background: transparent;
 }
 
+.site-footer > .nav li.active > a {
+  text-decoration: underline;
+}
+
 .site-footer > .navbar-right {
   margin-right: 0;
 }
