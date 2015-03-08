@@ -97,6 +97,7 @@
   -webkit-transition: -webkit-transform .9s 0;
   -moz-transition: -moz-transform .9s 0;
   transition: transform .9s 0;  
+  transition: transform .9s 0;
 }
 
 .iphone-container.animated {
@@ -150,6 +151,7 @@
   text-align: center;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;  
+  animation-duration: 2s;
 }
 
 .center-content-block h1 {
@@ -187,6 +189,7 @@ section#intro .center-content-block {
   -webkit-transform: translate3d(0, -110px, 0);
   -ms-transform: translate3d(0, -110px, 0);
   transform: translate3d(0, -110px, 0);  
+  transform: translate3d(0, -110px, 0);
 }
 
 section#intro .center-content-block h1 {
@@ -252,6 +255,12 @@ ul.videos > li > a:hover {
 ul.videos > li.active > a > img,
 ul.videos > li > a:hover > img {
   opacity: 1;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
