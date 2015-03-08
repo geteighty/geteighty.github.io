@@ -96,7 +96,6 @@
 
   -webkit-transition: -webkit-transform .9s 0;
   -moz-transition: -moz-transform .9s 0;
-  transition: transform .9s 0;  
   transition: transform .9s 0;
 }
 
@@ -150,7 +149,6 @@
 .center-content-block a {
   text-align: center;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;  
   animation-duration: 2s;
 }
 
@@ -188,7 +186,6 @@ section#intro .center-content-block {
 .moveTextUp {
   -webkit-transform: translate3d(0, -110px, 0);
   -ms-transform: translate3d(0, -110px, 0);
-  transform: translate3d(0, -110px, 0);  
   transform: translate3d(0, -110px, 0);
 }
 
@@ -261,6 +258,15 @@ ul.videos > li > a:hover > img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.site-footer > .navbar-right {
+  margin-right: 0;
+}
+
+.site-footer > .navbar-right > li {
+  padding: 15px;
+  color: #ccc;
 }
 
 @media (max-width: 900px) {
