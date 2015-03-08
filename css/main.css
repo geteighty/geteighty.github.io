@@ -268,6 +268,10 @@ ul.videos > li > a:hover > img {
   width: 100%;
 }
 
+.site-footer > .nav a:hover {
+  background: transparent;
+}
+
 .site-footer > .navbar-right {
   margin-right: 0;
 }
