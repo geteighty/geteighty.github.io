@@ -42,6 +42,10 @@
 }
 
 .onepage-pagination li a {
+  margin: 20px 0;
+}
+
+.onepage-pagination li a {
   width: 6px;
   height: 6px;
   left: 9px;
@@ -60,6 +64,9 @@
 .onepage-pagination li a.active:before {
   background: #d59b5e;
   border: 0;
+  width: 6px;
+  height: 6px;
+  left: 10px;
 }
 
 .animated.animated-2s {
