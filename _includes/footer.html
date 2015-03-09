@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer animated fadeInUp">
   <ul class="unstyled nav navbar-nav">
   {% assign sorted_pages = site.pages | sort:"sortOrder" %}
   {% for node in sorted_pages %}
@@ -12,7 +12,7 @@
   {% endfor %}
   </ul>
   <ul class="unstyled nav navbar-nav navbar-right">
-    <li>Copyright &copy; {{ site.time | date: '%Y' }} – 80&trade;</li>
+    <li>Copyright &copy; {{ site.time | date: '%Y' }} — 80&trade;</li>
   </ul>
 </footer>
 
