@@ -138,22 +138,12 @@
   transform: translate3d(0, 0, 0) !important;
 }
 
-.viewing-page-2 .iphone-container {
-  -webkit-transform: translate3d(0, -440px, 0) !important;
-  -moz-transform: translate3d(0, -440px, 0) !important;
-  transform: translate3d(0, -440px, 0) !important;
-}
-
-.viewing-page-3 .iphone-container {
+.viewing-page-2 .iphone-container,
+.viewing-page-3 .iphone-container,
+.viewing-page-4 .iphone-container {
   -webkit-transform: translate3d(0, -470px, 0) !important;
   -moz-transform: translate3d(0, -470px, 0) !important;
   transform: translate3d(0, -470px, 0) !important;
-}
-
-.viewing-page-4 .iphone-container {
-  -webkit-transform: translate3d(0, -500px, 0) !important;
-  -moz-transform: translate3d(0, -500px, 0) !important;
-  transform: translate3d(0, -500px, 0) !important;
 }
 
 .viewing-page-5 .iphone-container {
