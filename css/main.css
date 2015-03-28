@@ -146,6 +146,12 @@
   transform: translate3d(0, -470px, 0) !important;
 }
 
+.viewing-page-5 .iphone-container {
+  -webkit-transform: translate3d(0, 60px, 0) !important;
+  -moz-transform: translate3d(0, 60px, 0) !important;
+  transform: translate3d(0, 60px, 0) !important;
+}
+
 .center-content-block {
   margin: 0 auto;
 }
