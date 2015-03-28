@@ -178,13 +178,16 @@ section {
   position: relative;
 }
 
-section#intro .center-content-block {
+section .center-content-block {
   position: absolute;
   width: 780px;
   margin-top: -130px;
   margin-left: -390px;
   top: 50%;
   left: 50%;
+}
+
+section#intro .center-content-block {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
