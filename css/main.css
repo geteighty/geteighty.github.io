@@ -227,6 +227,14 @@ section > article {
   position: absolute;
   bottom: 30%;
   left: 6%;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.4s;
+  opacity: 0;
+}
+
+section.active > article {
+  opacity: 1;
 }
 
 article > h2 {
