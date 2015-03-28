@@ -192,6 +192,10 @@ section#intro .center-content-block {
   transition: all 1s ease-in-out;
 }
 
+section#end .center-content-block {
+  margin-top: -210px;
+}
+
 .moveTextUp {
   -webkit-transform: translate3d(0, -110px, 0);
   -ms-transform: translate3d(0, -110px, 0);
