@@ -98,7 +98,7 @@
   height: 726px;
   margin-left: -175px;
   z-index: 1;
-  bottom: -320px;
+  bottom: -480px;
   left: 50%;
   -webkit-transition: -webkit-transform .9s 0;
   -moz-transition: -moz-transform .9s 0;
@@ -141,9 +141,9 @@
 .viewing-page-2 .iphone-container,
 .viewing-page-3 .iphone-container,
 .viewing-page-4 .iphone-container {
-  -webkit-transform: translate3d(0, -330px, 0) !important;
-  -moz-transform: translate3d(0, -330px, 0) !important;
-  transform: translate3d(0, -330px, 0) !important;
+  -webkit-transform: translate3d(0, -470px, 0) !important;
+  -moz-transform: translate3d(0, -470px, 0) !important;
+  transform: translate3d(0, -470px, 0) !important;
 }
 
 .center-content-block {
@@ -308,8 +308,8 @@ ul.videos > li > a:hover > img {
   .viewing-page-2 .iphone-container,
   .viewing-page-3 .iphone-container,
   .viewing-page-4 .iphone-container {
-    -webkit-transform: translate3d(35%, -330px, 0) !important;
-    -moz-transform: translate3d(35%, -330px, 0) !important;
-    transform: translate3d(35%, -330px, 0) !important;
+    -webkit-transform: translate3d(40%, -330px, 0) !important;
+    -moz-transform: translate3d(40%, -330px, 0) !important;
+    transform: translate3d(40%, -330px, 0) !important;
   }
 }
