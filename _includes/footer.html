@@ -1,4 +1,4 @@
-<footer class="site-footer animated fadeInUp">
+<footer class="site-footer {% if page.animateLayout %} animated fadeInUp {% endif %}">
   <ul class="unstyled nav navbar-nav">
   {% assign sorted_pages = site.pages | sort:"sortOrder" %}
   {% for node in sorted_pages %}
