@@ -322,6 +322,22 @@ ul.videos > li > a:hover > img {
   color:#000;
 }
 
+.content-page {
+
+}
+
+.content-page-header {
+
+}
+
+.content-page-header h1 {
+
+}
+
+.content-page-content {
+
+}
+
 @media (max-width: 900px) {
   .viewing-page-2 .iphone-container,
   .viewing-page-3 .iphone-container,
