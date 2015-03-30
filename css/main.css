@@ -123,13 +123,13 @@
 }
 
 .phone-video-container .video-container {
-  width: 265px;
-  top: 76px;
-  left: 43px;
+  width: 274px;
+  top: 75px;
+  left: 39px;
 }
 
 .phone-video-container .video-container video {
-  width: 265px;
+  width: 274px;
 }
 
 .viewing-page-1 .iphone-container {
@@ -342,9 +342,22 @@ ul.videos > li > a:hover > img {
 }
 
 .content-page-content {
-
 }
 
+.content-page-content img {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.content-page-content img:hover {
+  opacity: 0.6;
+}
+
+.content-page-content ul {
+  padding-left: 0px !important;
+}
 
 .content-page-content li {
   border: 1px solid #d6d6d6;
@@ -353,6 +366,7 @@ ul.videos > li > a:hover > img {
   display: inline-block;
   border-radius: 3px;
   margin-right: 10px;
+  margin-bottom: 60px;
 }
 
 .content-page-content li:hover {
@@ -363,7 +377,7 @@ ul.videos > li > a:hover > img {
 }
 
 .content-page-content a {
-  color:#636363;
+  color:#aeaeae;
   line-height: 36px;
 }
 
