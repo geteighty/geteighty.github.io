@@ -81,6 +81,20 @@
   border-radius: 36px;
   margin: 0 auto;
   background-color: #d59b5e;
+  transition: all .15s ease-in-out;
+}
+
+
+.play-button:hover {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-color: #cf975d;
+  transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -webkit-transform: scale(0.92);
 }
 
 .play-button img {
