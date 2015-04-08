@@ -1,14 +1,22 @@
 (function() {
 
-	var $scrollContainer, $videoContainer, $videoTag, isPlayingVideo = false, currentVideoName = "";
+	var $scrollContainer, $videoContainer, $videoTag, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer;
 
 	$(document).ready(function() {
 
 		$scrollContainer = $(".main");
 		$videoContainer = $("div.video-container");
 		$videoTag = $videoContainer.find("video");
+		$conceptVideoWrapper = $("div.concept-video-wrapper");
+		conceptVideo = $("#conceptVideo").get(0);
 
-		$("article").on("click", "a[href=#play-video]", onVideoLink_Clicked);
+		$("#intro").on("click", "a[href=#play-video]", onVideoLink_Clicked);
+		$conceptVideoWrapper.on("click", "svg.play", onPlayButton_Clicked);
+		$conceptVideoWrapper.on("click", "svg.pause", onPauseButton_Clicked);
+		$conceptVideoWrapper.on("click", "div.concept-video-close", onCloseButton_Clicked);
+		$conceptVideoWrapper.on("click", "div.concept-video-seeker", seekConceptVideo);
+		$conceptVideoWrapper.on("mousemove", onMouseMoveVideo);
+		$("#conceptVideo").on("timeupdate", updateVideoProgress);
 
 		$(".main").onepage_scroll({
 		   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -23,7 +31,7 @@
 		window.setTimeout(function() {
 			$("section#intro .center-content-block").addClass("moveTextUp");
 		}, 2500)
-		
+
 	});
 
 	function onPageScrolled(pageIndex) {
@@ -33,7 +41,58 @@
 	function onVideoLink_Clicked(event) {
 		event.preventDefault();
 
-		console.log($(event.target).data("video"));
+		$conceptVideoWrapper.addClass("visible");
+		$conceptVideoWrapper.toggleClass("playing", true);
+
+		conceptVideo.play();
+	}
+
+	function onPlayButton_Clicked(event) {
+		$conceptVideoWrapper.toggleClass("playing", true);
+		conceptVideo.play();
+	}
+
+	function onPauseButton_Clicked(event) {
+		$conceptVideoWrapper.toggleClass("playing", false);
+		conceptVideo.pause();
+	}
+
+	function onCloseButton_Clicked(event) {
+		$conceptVideoWrapper.toggleClass("playing visible", false);
+
+		conceptVideo.pause();
+		conceptVideo.currentTime = 0;
+	}
+
+	function updateVideoProgress() {
+		var e = 100 / conceptVideo.duration * conceptVideo.currentTime;
+
+		$("div.concept-video-current").width(e + "%");
+	}
+
+	function seekConceptVideo(event) {
+		var e, n, i, o;
+
+    o = $("div.concept-video-seeker").width();
+    n = event.offsetX;
+    i = n / o;
+    e = conceptVideo.duration * i;
+
+    conceptVideo.currentTime = e;
+	}
+
+	function onMouseMoveVideo() {
+		$conceptVideoWrapper.toggleClass("mouse-over", true);
+
+		if (mouseMoveTimer) {
+			clearTimeout(mouseMoveTimer)
+		}
+
+		mouseMoveTimer = setTimeout(function() {
+			mouseMoveTimer = null;
+
+			$conceptVideoWrapper.toggleClass("mouse-over", false);
+		}, 3000);
 	}
 
 })();
