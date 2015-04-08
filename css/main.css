@@ -140,6 +140,7 @@
   width: 274px;
   top: 75px;
   left: 39px;
+  overflow: hidden;
 }
 
 .phone-video-container .video-container video {
