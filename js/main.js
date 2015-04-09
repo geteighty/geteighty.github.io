@@ -66,6 +66,7 @@
 	function onPromoVideoLink_Clicked(event) {
 		event.preventDefault();
 
+		$(document.body).toggleClass("concept-video-playing", true);
 		$conceptVideoWrapper.addClass("visible");
 		$conceptVideoWrapper.toggleClass("playing", true);
 
@@ -83,6 +84,7 @@
 	}
 
 	function onCloseButton_Clicked(event) {
+		$(document.body).toggleClass("concept-video-playing", false);
 		$conceptVideoWrapper.toggleClass("playing visible", false);
 
 		conceptVideo.pause();

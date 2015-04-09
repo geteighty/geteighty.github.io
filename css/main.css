@@ -449,11 +449,24 @@ ul.videos > li > a:hover > img {
   top: 0;
   width: 100%;
   z-index: -1000;
+  -webkit-transition: opacity .9s;
+  -moz-transition: opacity .9s;
+  transition: opacity .9s;
 }
 
 .concept-video-wrapper.visible {
   z-index: 1000;
   opacity: 1;
+}
+
+.push-back-on-video-play {
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+body.concept-video-playing .push-back-on-video-play {
+  opacity: 0;
 }
 
 #conceptVideo {
