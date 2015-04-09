@@ -1,6 +1,6 @@
 (function() {
 
-	var $scrollContainer, $videoContainer, videoPlayer, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer;
+	var $scrollContainer, $videoContainer, videoPlayer, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer, currentPageIndex, currentVideoUrl;
 
 	$(document).ready(function() {
 
@@ -9,6 +9,7 @@
 		videoPlayer = $videoContainer.find("video").get(0);
 		$conceptVideoWrapper = $("div.concept-video-wrapper");
 		conceptVideo = $("#conceptVideo").get(0);
+		currentVideoUrl = $(videoPlayer).data("defaultVideo");
 
 		$("article").on("click", "a[href=#play-video]", onArticleVideoLink_Clicked);
 		$("#intro").on("click", "a[href=#play-video]", onPromoVideoLink_Clicked);
@@ -36,24 +37,41 @@
 	});
 
 	function onPageScrolled(pageIndex) {
-		console.log("scrolled %f", pageIndex);
+		if (currentPageIndex != pageIndex) {
+			var $section = $("section[data-index=" + pageIndex + "]"),
+				$videoLink = $section.find("a.video-button:first");
+
+			changePreviewVideo($videoLink);
+
+			currentPageIndex = pageIndex;
+			console.log("scrolled %f", pageIndex);
+		}
 	}
 
 	function onArticleVideoLink_Clicked(event) {
 		event.preventDefault();
 
-		var $link = $(event.currentTarget),
-			$li = $link.parent(),
+		changePreviewVideo($(event.currentTarget));
+	}
+
+	function changePreviewVideo($link) {
+		var $li = $link.parent(),
 			$ul = $li.parent(),
-			videoUrl = $link.data("video"),
-			$replacementVideoTag = $("<video />").addClass("preview-video animated fadeInUp").append($("<source />").attr("src", videoUrl).attr("type", "video/mp4"));
+			videoUrl = $link.data("video") || "/video/record_trip_1.mp4",
+			$replacementVideoTag = $("<video />").addClass("preview-video animated fadeIn").append($("<source />").attr("src", videoUrl).attr("type", "video/mp4"));
+
+		if (currentVideoUrl == videoUrl) {
+			return;
+		};
+
+		currentVideoUrl = videoUrl;
 
 		$ul.find("li.active").removeClass("active");
 		$li.addClass("active");
 
 		$videoContainer.append($replacementVideoTag);
 
-		$(videoPlayer).addClass("animated fadeOutUp").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
+		$(videoPlayer).addClass("animated fadeOut").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
 			$(this).remove();
 		});
 

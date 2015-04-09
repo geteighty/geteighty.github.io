@@ -147,8 +147,8 @@
 .phone-video-container .video-container video {
   width: 274px;
   position: absolute;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
 }
 
 .viewing-page-1 .iphone-container {

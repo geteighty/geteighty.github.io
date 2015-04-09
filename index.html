@@ -89,7 +89,7 @@ animateLayout: true
   <div class="phone-video-container">
     <img class="green" src="{{ "/img/iphonehand.png" | prepend: site.baseurl }}" alt="iPhone">
     <div class="video-container">
-      <video class="preview-video" preload autoplay>
+      <video class="preview-video" data-default-video="{{ "/video/record_trip_1.mp4" | prepend: site.baseurl }}" preload autoplay>
         <source src="{{ "/video/record_trip_1.mp4" | prepend: site.baseurl }}" type="video/mp4" />
       </video>
     </div>
