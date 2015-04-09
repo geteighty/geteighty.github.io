@@ -138,6 +138,7 @@
 
 .phone-video-container .video-container {
   width: 274px;
+  height: 486px;
   top: 75px;
   left: 39px;
   overflow: hidden;
@@ -145,6 +146,9 @@
 
 .phone-video-container .video-container video {
   width: 274px;
+  position: absolute;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .viewing-page-1 .iphone-container {

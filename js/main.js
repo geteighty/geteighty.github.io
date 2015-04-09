@@ -45,12 +45,20 @@
 		var $link = $(event.currentTarget),
 			$li = $link.parent(),
 			$ul = $li.parent(),
-			videoUrl = $link.data("video");
+			videoUrl = $link.data("video"),
+			$replacementVideoTag = $("<video />").addClass("preview-video animated fadeInUp").append($("<source />").attr("src", videoUrl).attr("type", "video/mp4"));
 
 		$ul.find("li.active").removeClass("active");
 		$li.addClass("active");
 
-		videoPlayer.setAttribute("src", videoUrl);
+		$videoContainer.append($replacementVideoTag);
+
+		$(videoPlayer).addClass("animated fadeOutUp").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
+			$(this).remove();
+		});
+
+		videoPlayer = $replacementVideoTag.get(0);
+
 		videoPlayer.load();
 		videoPlayer.play();
 	}
