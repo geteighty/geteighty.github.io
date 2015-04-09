@@ -1,16 +1,17 @@
 (function() {
 
-	var $scrollContainer, $videoContainer, $videoTag, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer;
+	var $scrollContainer, $videoContainer, videoPlayer, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer;
 
 	$(document).ready(function() {
 
 		$scrollContainer = $(".main");
 		$videoContainer = $("div.video-container");
-		$videoTag = $videoContainer.find("video");
+		videoPlayer = $videoContainer.find("video").get(0);
 		$conceptVideoWrapper = $("div.concept-video-wrapper");
 		conceptVideo = $("#conceptVideo").get(0);
 
-		$("#intro").on("click", "a[href=#play-video]", onVideoLink_Clicked);
+		$("article").on("click", "a[href=#play-video]", onArticleVideoLink_Clicked);
+		$("#intro").on("click", "a[href=#play-video]", onPromoVideoLink_Clicked);
 		$conceptVideoWrapper.on("click", "svg.play", onPlayButton_Clicked);
 		$conceptVideoWrapper.on("click", "svg.pause", onPauseButton_Clicked);
 		$conceptVideoWrapper.on("click", "div.concept-video-close", onCloseButton_Clicked);
@@ -38,7 +39,23 @@
 		console.log("scrolled %f", pageIndex);
 	}
 
-	function onVideoLink_Clicked(event) {
+	function onArticleVideoLink_Clicked(event) {
+		event.preventDefault();
+
+		var $link = $(event.currentTarget),
+			$li = $link.parent(),
+			$ul = $li.parent(),
+			videoUrl = $link.data("video");
+
+		$ul.find("li.active").removeClass("active");
+		$li.addClass("active");
+
+		videoPlayer.setAttribute("src", videoUrl);
+		videoPlayer.load();
+		videoPlayer.play();
+	}
+
+	function onPromoVideoLink_Clicked(event) {
 		event.preventDefault();
 
 		$conceptVideoWrapper.addClass("visible");
