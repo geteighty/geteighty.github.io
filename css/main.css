@@ -142,7 +142,7 @@
   top: 75px;
   left: 39px;
   overflow: hidden;
-  background: url(../img/80-logo-animation.gif) center center;
+  background: url(../img/preview-video-loader.gif) center center;
 }
 
 .phone-video-container .video-container video {
@@ -436,10 +436,10 @@ ul.videos > li > a:hover > img {
 }
 
 .two-col {
-       -moz-column-count: 2;
-       -moz-column-gap: 20px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
 }
 
 .concept-video-wrapper {

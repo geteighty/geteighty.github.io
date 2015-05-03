@@ -70,7 +70,9 @@
 		$li.addClass("active");
 
 		$(videoPlayer).addClass("animated fadeOut").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
-			$videoContainer.append($replacementVideoTag);
+			setTimeout(function() {
+				$videoContainer.append($replacementVideoTag);
+			}, 200);
 
 			$(this).remove();
 		});
