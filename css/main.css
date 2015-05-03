@@ -286,10 +286,10 @@ ul.videos > li {
 
 ul.videos > li > a {
   color: #ccc;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 0 15px 40px;
+  padding: 15px 8px 15px 38px;
   background-repeat: no-repeat;
   background-position: 0 center;
 }
