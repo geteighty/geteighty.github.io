@@ -499,10 +499,10 @@ body.concept-video-playing .push-back-on-video-play {
   -ms-transform: translateY(-40px);
   -webkit-transform: translateY(-40px);
   transform: translateY(-40px);
-  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
-  -o-transition: opacity 0.2s, -o-transform 0.2s;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, transform 0.2s;
+  -moz-transition: opacity 0.2s, -moz-transform 0.4s ease-in-out;
+  -o-transition: opacity 0.2s, -o-transform 0.4s ease-in-out;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.2s, transform 0.4s ease-in-out;
   width: 44px;
   z-index: 1001;
 }
@@ -553,6 +553,14 @@ body.concept-video-playing .push-back-on-video-play {
   display: inline-block;
 }
 
+.concept-video-action .play:hover,
+.concept-video-action .pause:hover {
+  transition: transform .15s ease-in-out;
+  transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -webkit-transform: scale(0.92);
+}
+
 .concept-video-seeker {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -590,6 +598,13 @@ body.concept-video-playing .push-back-on-video-play {
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
   transform: translateY(0);
+}
+
+.mouse-over .concept-video-close:hover {
+  -moz-transform: translateY(0) rotate(360deg);
+  -ms-transform: translateY(0) rotate(360deg);
+  -webkit-transform: translateY(0) rotate(360deg);
+  transform: translateY(0) rotate(360deg);
 }
 
 .mouse-over .concept-video-controls {
