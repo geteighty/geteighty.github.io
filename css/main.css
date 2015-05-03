@@ -566,13 +566,13 @@ body.concept-video-playing .push-back-on-video-play {
 }
 
 .concept-video-track {
-  background-color: rgba(204,204,204,0.5);
+  background-color: #fff;
   height: 2px;
   position: relative;
 }
 
 .concept-video-current {
-  background-color: #fff;
+  background-color: #d59b5e;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
