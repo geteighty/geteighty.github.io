@@ -601,10 +601,10 @@ body.concept-video-playing .push-back-on-video-play {
 }
 
 .mouse-over .concept-video-close:hover {
-  -moz-transform: translateY(0) rotate(360deg);
-  -ms-transform: translateY(0) rotate(360deg);
-  -webkit-transform: translateY(0) rotate(360deg);
-  transform: translateY(0) rotate(360deg);
+  -moz-transform: translateY(0) rotate(360deg) scale(0.92);
+  -ms-transform: translateY(0) rotate(360deg) scale(0.92);
+  -webkit-transform: translateY(0) rotate(360deg) scale(0.92);
+  transform: translateY(0) rotate(360deg) scale(0.92);
 }
 
 .mouse-over .concept-video-controls {
