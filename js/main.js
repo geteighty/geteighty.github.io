@@ -72,7 +72,7 @@
 		$(videoPlayer).addClass("animated fadeOut").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
 			setTimeout(function() {
 				$videoContainer.append($replacementVideoTag);
-			}, 200);
+			}, 150);
 
 			$(this).remove();
 		});
