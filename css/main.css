@@ -114,9 +114,9 @@
   z-index: 1;
   bottom: -480px;
   left: 50%;
-  -webkit-transition: -webkit-transform .9s 0;
-  -moz-transition: -moz-transform .9s 0;
-  transition: transform .9s 0;
+  -webkit-transition: -webkit-transform .9s;
+  -moz-transition: -moz-transform .9s;
+  transition: transform .9s;
 }
 
 .iphone-container.animated {
