@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.seotitle %}{{ page.seotitle }} | 80™ – Mileage Book{% elsif page.title %}{{ page.title }} | 80™ – Mileage Book{% else %}{{ site.name }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+
+    <meta property="og:title" content="Trip logging on your iPhone — 80™" />
+    <meta property="og:image" content="http://geteighty.com/img/eighty_fb_share_01.png?width=130" />
+    <meta property="og:image" content="http://geteighty.com/img/eighty_fb_share_02.png?width=130" />
+
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:app:id:iphone" content="id873847566">
+    <meta name="twitter:app:id:ipad" content="">
+    <meta name="twitter:app:id:googleplay" content="">
+    <meta name="twitter:app:country" content="us">
+    <meta name="twitter:url" content="http://geteighty.com/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/onepage-scroll.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+
+        _gs('GSN-713710-H');
+    </script>
+</head>

@@ -1,117 +1,123 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>80™ – Mileage Book for Business Trips</title>
-        <meta name="description" content="Keep track of your driving and export your trips when you need to file expense reports, do your taxes or other deductions">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+---
+layout: default
+animateLayout: true
+---
 
-        <meta property="og:title" content="Trip logging on your iPhone — 80™" />
-        <meta property="og:image" content="http://geteighty.com/img/eighty_fb_share_01.png?width=130" />
-        <meta property="og:image" content="http://geteighty.com/img/eighty_fb_share_02.png?width=130" />
-        
-        <meta name="twitter:card" content="app">
-        <meta name="twitter:app:id:iphone" content="id873847566">
-        <meta name="twitter:app:id:ipad" content="">
-        <meta name="twitter:app:id:googleplay" content="">
-        <meta name="twitter:app:country" content="us">
-        <meta name="twitter:url" content="http://geteighty.com/">
+<ul class="onepage-pagination animated fadeInRight">
+  <li><a data-index="1" href="#1" class="active"></a></li>
+  <li><a data-index="2" href="#2"></a></li>
+  <li><a data-index="3" href="#3"></a></li>
+  <li><a data-index="4" href="#4"></a></li>
+  <li><a data-index="5" href="#5"></a></li>
+</ul>
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+<div class="main">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script type="text/javascript" src="//use.typekit.net/sqm5rvv.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        
-        <script>
-          !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-          insertBefore(d,q)}(window,document,'script','_gs');
-        
-          _gs('GSN-713710-H');
-        </script>        
-    </head>
-    <body>
-        <header>
-            <div class="logo animated fadeInDown">
-                <span aria-hidden="true" class="icon-logo">&nbsp;</span>
-            </div>
-            <div class="twitter-button animated fadeInDown">
-                <a href="http://twitter.com/geteighty" target="_blank" class="icon-twitter_icon">&nbsp;</a>
-            </div>
-        </header>
+  <section id="intro" class="section" data-index="1">
+    <div class="center-content-block push-back-on-video-play">
+      <h1 class="animated fadeIn">Mileage Book for Business Trips</h1>
+      <p class="animated fadeIn">
+        Keep track of your driving and export your trips when you need to file<br />
+        expense reports, do your taxes or other deductions.
+      </p>
 
-        <div class="turn-anim-target">
-            <section id="main">
-                <div class="main-container">
-                    <div class="signup">
-                        <h1 class="animated fadeInUp">Mileage Book for Business Trips</h1>
-                        <h2 class="animated fadeInUp">80 helps you keep track of your car mileage and makes it easy to export your trips when you need to file expense reports, do your taxes or other deductions.</h2>
-                        <div class="input-group animated fadeInLeft">
-                            <a href="http://AppStore.com/80"><img src="img/download-on-app-store.png" alt="Download on the App Store" border="0" /></a>
-                        </div>
-                    </div>
+      <a href="#play-video" class="play-button animated fadeIn">
+        <img src="{{ "/img/play_icon.png" | prepend: site.baseurl }}" />
+      </a>
+    </div>
+  </section>
 
-                    <div class="phone animated fadeInRight">
-                        <img src="img/80_app_teaser.png" alt="Trip logging on your iPhone — 80™" class="floating" />
-                    </div>
-                </div>
+  <section id="record" class="section" data-index="2">
+    <article>
+      <h2>Record a new trip</h2>
+      <p>
+        Press record and let 80 track how far you drive.
+        When you arrive, you can save your trip with a little note and your trip is securely stored on your iPhone.
+      </p>
+      <ul class="videos">
+        <li class="active"><a href="#play-video" class="video-button auto-record" data-video="{{ "/video/record_trip_1.mp4" | prepend: site.baseurl }}">Auto record</a></li>
+        <li><a href="#play-video" class="video-button manual-entry" data-video="{{ "/video/add_past_trip.mp4" | prepend: site.baseurl }}">Manual entry</a></li>
+      </ul>
+    </article>
+  </section>
 
-            </section>
+  <section id="review" class="section" data-index="3">
+    <article>
+      <h2>Review your trips</h2>
+      <p>
+        View your recent trips by swiping back and forth on the Dashboard, or open the full history to see all of your past trips.
+      </p>
+      <ul class="videos">
+        <li class="active"><a href="#play-video" class="video-button dashboard" data-video="{{ "/video/dashboard.mp4" | prepend: site.baseurl }}">Dashboard</a></li>
+        <li><a href="#play-video" class="video-button history" data-video="{{ "/video/history.mp4" | prepend: site.baseurl }}">History</a></li>
+      </ul>
+    </article>
+  </section>
 
-            <section id="about">
-                <center><h3>About Eighty</h3>
-                <p>Eighty is simply the easiest way to log and keep track of your driving.<br>
-                Eighty is formed by brothers Martin and Mathias Høst Normark, created with true love and passion for digital products.</p>              
-                <a href="mailto:info@geteighty.com">info@geteighty.com</a></center>
-                <div class="close-button">
-                    <a href="#close" class="icon-close_btn">&nbsp;</a>
-                </div>
-            </section>
-        </div>
+  <section id="export" class="section" data-index="4">
+    <article>
+      <h2>Export your trips</h2>
+      <p>
+        Whenever you need to reimburse your mileage, you can export your trips by selecting a date range and send the list by e-mail, save to Dropbox, open in Numbers, Excel, Google Sheets or any other CSV-compatible app.
+      </p>
+      <ul class="videos">
+        <li class="active"><a href="#play-video" class="video-button export" data-video="{{ "/video/export.mp4" | prepend: site.baseurl }}">Export</a></li>
+        <li><a href="#play-video" class="video-button dropbox" data-video="{{ "/video/save_to_dropbox.mp4" | prepend: site.baseurl }}">Save to Dropbox</a></li>
+        <li><a href="#play-video" class="video-button numbers" data-video="{{ "/video/open_in_numbers.mp4" | prepend: site.baseurl }}">Open in Numbers</a></li>
+        <li><a href="#play-video" class="video-button excel" data-video="{{ "/video/open_in_excel.mp4" | prepend: site.baseurl }}">Open in Excel</a></li>
+      </ul>
+    </article>
+  </section>
 
-        <footer>
-            <a href="#about" class="about-text animated fadeInUp">about eighty</a>
-            <a href="#about" class="about icon-arrow_down animated fadeInUp">&nbsp;</a>
-        </footer>
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+  <section id="end" class="section" data-index="5">
+    <div class="center-content-block">
+      <h1>Start Tracking Today</h1>
+      <p>
+        Keep track of your driving and export your trips when you need to file<br />
+        expense reports, do your taxes or other deductions.
+      </p>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+      <a href="https://itunes.apple.com/us/app/80-mileage-book/id873847566?mt=8" target="_blank" class="play-button animated fadeIn">
+        <img src="{{ "/img/app-icon.png" | prepend: site.baseurl }}" />
+      </a>
+    </div>
+  </section>
 
-        <script>
-            var _gaq=[['_setAccount','UA-42776378-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-        
-        <script type="text/javascript">
-        adroll_adv_id = "GSNIVNFOFFCO7NXYOYXVYL";
-        adroll_pix_id = "FCQ4XZ2RRFH2PNVUDDL53C";
-        (function () {
-        var oldonload = window.onload;
-        window.onload = function(){
-           __adroll_loaded=true;
-           var scr = document.createElement("script");
-           var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-           scr.setAttribute('async', 'true');
-           scr.type = "text/javascript";
-           scr.src = host + "/j/roundtrip.js";
-           ((document.getElementsByTagName('head') || [null])[0] ||
-            document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-           if(oldonload){oldonload()}};
-        }());
-        </script>
-        
-    </body>
-</html>
+</div>
+
+<div class="iphone-container animated fadeIn">
+  <div class="phone-video-container">
+    <img class="green" src="{{ "/img/iphonehand.png" | prepend: site.baseurl }}" alt="iPhone">
+    <div class="video-container">
+      <video class="preview-video" data-default-video="{{ "/video/record_trip_1.mp4" | prepend: site.baseurl }}" preload autoplay>
+        <source src="{{ "/video/record_trip_1.mp4" | prepend: site.baseurl }}" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="concept-video-wrapper">
+  <video id="conceptVideo" preload>
+    <source src="{{ "/video/80_CONCEPT_FILM_422.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  </video>
+  <div class="concept-video-close"></div>
+  <div class="concept-video-controls">
+    <div class="concept-video-action">
+      <svg class="play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="54px" x="0px" y="0px" viewBox="0 0 54 54" enable-background="new 0 0 54 54" xml:space="preserve">
+        <circle cx="27" cy="27" r="26" fill="#d59b5e"></circle>
+        <polygon fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="24.1,18 24.1,36 34.1,27 "></polygon>
+      </svg>
+      <svg class="pause" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="54px" x="0px" y="0px" viewBox="0 0 54 54" enable-background="new 0 0 54 54" xml:space="preserve">
+        <circle cx="27" cy="27" r="26" fill="#d59b5e"></circle>
+        <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22" y1="18" x2="22" y2="36"></line>
+        <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="32" y1="18" x2="32" y2="36"></line>
+      </svg>
+    </div>
+    <div class="concept-video-seeker">
+      <div class="concept-video-track">
+        <div class="concept-video-current"></div>
+        <div class="concept-video-pointer"></div>
+      </div>
+    </div>
+  </div>
+</div>

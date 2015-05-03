@@ -1,0 +1,12 @@
+# Site settings
+name: "80™ Mileage Book for Business Trips"
+title: "Mileage Book for Business Trips"
+email: "info@geteighty.com"
+description: "Keep track of your driving and export your trips when you need to file expense reports, do your taxes or other deductions"
+baseurl: "http://geteighty.com/"
+twitter_username: geteighty
+github_username:  geteighty
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title.html

@@ -1,0 +1,29 @@
+<footer class="site-footer {% if page.animateLayout %} animated fadeInUp {% endif %}">
+  <ul class="unstyled nav navbar-nav">
+  {% assign sorted_pages = site.pages | sort:"sortOrder" %}
+  {% for node in sorted_pages %}
+  {% if node.showInNavBar %}
+  {% if page.url == node.url %}
+    <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+  {% else %}
+    <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+  </ul>
+  <ul class="unstyled nav navbar-nav navbar-right">
+    <li>Copyright &copy; {{ site.time | date: '%Y' }} — 80&trade;</li>
+  </ul>
+</footer>
+
+<!--[if lt IE 9]>
+    <script src="{{ "/js/vendor/jquery-1.11.1.min.js" | prepend: site.baseurl }}"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script src="{{ "/js/vendor/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
+<!--<![endif]-->
+
+<script src="{{ "/js/vendor/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/plugins/jquery.onepage-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/plugins.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
