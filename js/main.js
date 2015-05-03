@@ -69,9 +69,9 @@
 		$ul.find("li.active").removeClass("active");
 		$li.addClass("active");
 
-		$videoContainer.append($replacementVideoTag);
-
 		$(videoPlayer).addClass("animated fadeOut").on("animationend oAnimationEnd animationend webkitAnimationEnd", function() {
+			$videoContainer.append($replacementVideoTag);
+
 			$(this).remove();
 		});
 

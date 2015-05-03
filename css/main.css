@@ -142,6 +142,7 @@
   top: 75px;
   left: 39px;
   overflow: hidden;
+  background: url(../img/preview-video-bg.png) center center;
 }
 
 .phone-video-container .video-container video {
