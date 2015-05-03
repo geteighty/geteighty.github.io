@@ -18,14 +18,14 @@
 .eighty-nav nav li > a {
   text-decoration: none;
   background-color: transparent;
-  color: #000;
+  color: #d59b5e;
   margin-top: 5px;
 }
 
 .eighty-nav nav li > a:hover {
   text-decoration: none;
   background-color: transparent;
-  color: ##d59b5e;
+  color: #d59b5e;
 }
 
 .page-wrapper {
