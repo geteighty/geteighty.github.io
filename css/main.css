@@ -700,6 +700,10 @@ body.concept-video-playing .push-back-on-video-play {
     right: 10px;
   }
 
+  .page-wrapper {
+    overflow: hidden;
+  }
+
   section .center-content-block {
     width: auto;
     margin: 0;
