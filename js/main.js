@@ -1,6 +1,6 @@
 (function() {
 
-	var $scrollContainer, $videoContainer, videoPlayer, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer, currentPageIndex, currentVideoUrl;
+	var $scrollContainer, $videoContainer, videoPlayer, $conceptVideoWrapper, conceptVideo, isPlayingVideo = false, currentVideoName = "", mouseMoveTimer, currentPageIndex, currentVideoUrl, isDesktop;
 
 	$(document).ready(function() {
 
@@ -10,6 +10,7 @@
 		$conceptVideoWrapper = $("div.concept-video-wrapper");
 		conceptVideo = $("#conceptVideo").get(0);
 		currentVideoUrl = $(videoPlayer).data("defaultVideo");
+		isDesktop = $("div.concept-video-wrapper").is(":visible");
 
 		$("article").on("click", "a[href=#play-video]", onArticleVideoLink_Clicked);
 		$("#intro").on("click", "a[href=#play-video]", onPromoVideoLink_Clicked);
@@ -85,9 +86,11 @@
 	function onPromoVideoLink_Clicked(event) {
 		event.preventDefault();
 
-		$(document.body).toggleClass("concept-video-playing", true);
-		$conceptVideoWrapper.addClass("visible");
-		$conceptVideoWrapper.toggleClass("playing", true);
+		if (isDesktop) {
+			$(document.body).toggleClass("concept-video-playing", true);
+			$conceptVideoWrapper.addClass("visible");
+			$conceptVideoWrapper.toggleClass("playing", true);
+		}
 
 		conceptVideo.play();
 	}
