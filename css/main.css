@@ -684,3 +684,15 @@ body.concept-video-playing .push-back-on-video-play {
     transform: translate3d(40%, -330px, 0) !important;
   }
 }
+
+@media (max-width: 767px) {
+  .navbar > .container-fluid {
+    margin: 0;
+  }
+
+  .navbar-header > .download-80 {
+    color: #d59b5e;
+    line-height: 50px;
+    padding: 15px 15px;
+  }
+}
