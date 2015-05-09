@@ -695,4 +695,25 @@ body.concept-video-playing .push-back-on-video-play {
     line-height: 50px;
     padding: 15px 15px;
   }
+
+  section .center-content-block {
+    width: auto;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .center-content-block h1 {
+    font-size: 2.5em;
+  }
+
+  .center-content-block p {
+    padding: 0 25px;
+  }
+
+  .moveTextUp {
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
 }
