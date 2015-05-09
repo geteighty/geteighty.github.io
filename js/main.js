@@ -35,6 +35,19 @@
 			$("section#intro .center-content-block").addClass("moveTextUp");
 		}, 2500)
 
+		if (!isDesktop) {
+			// sort of emulate safari's "bounce back to top" scroll
+			window.addEventListener('scroll', function(ev) {
+			    // avoids scrolling when the focused element is e.g. an input
+			    if (
+			        !document.activeElement
+			        || document.activeElement === document.body
+			    ) {
+			        document.body.scrollIntoViewIfNeeded(true);
+			    }
+			});
+		}
+
 	});
 
 	function onPageScrolled(pageIndex) {

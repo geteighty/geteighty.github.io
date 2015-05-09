@@ -686,6 +686,11 @@ body.concept-video-playing .push-back-on-video-play {
 }
 
 @media (max-width: 767px) {
+  html {
+      /* enough space to scroll up to get fullscreen on iOS8 */
+      padding-bottom: 80px;
+  }
+
   .navbar.eighty-nav {
     position:fixed !important;
     position:absolute;
