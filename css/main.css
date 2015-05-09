@@ -686,6 +686,13 @@ body.concept-video-playing .push-back-on-video-play {
 }
 
 @media (max-width: 767px) {
+  .navbar.eighty-nav {
+    position:fixed !important;
+    position:absolute;
+    right:0;
+    left:0;
+  }
+
   .navbar > .container-fluid {
     margin: 0;
   }
