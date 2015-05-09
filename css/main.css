@@ -752,4 +752,12 @@ body.concept-video-playing .push-back-on-video-play {
     -moz-transform: translate3d(0, -100px, 0) !important;
     transform: translate3d(0, -100px, 0) !important;
   }
+
+  .mobile-footer {
+    margin-top: 15px;
+  }
+
+  .mobile-footer a {
+    color: #d59b5e;
+  }
 }

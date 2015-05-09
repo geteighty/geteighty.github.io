@@ -80,6 +80,21 @@ animateLayout: true
       <a href="https://itunes.apple.com/us/app/80-mileage-book/id873847566?mt=8" target="_blank" class="play-button animated fadeIn">
         <img src="{{ "/img/app-icon.png" | prepend: site.baseurl }}" />
       </a>
+
+      <footer class="mobile-footer visible-xs">
+        <ul class="unstyled nav navbar-nav">
+        {% assign sorted_pages = site.pages | sort:"sortOrder" %}
+        {% for node in sorted_pages %}
+        {% if node.showInNavBar %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+        {% else %}
+          <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </footer>
     </div>
   </section>
 
