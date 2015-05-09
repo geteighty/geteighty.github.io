@@ -754,9 +754,9 @@ body.concept-video-playing .push-back-on-video-play {
   }
 
   .moveTextUp {
-    -webkit-transform: translate3d(0, -20px, 0);
-    -ms-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 
   .iphone-container {
@@ -766,9 +766,9 @@ body.concept-video-playing .push-back-on-video-play {
   .viewing-page-2 .iphone-container,
   .viewing-page-3 .iphone-container,
   .viewing-page-4 .iphone-container {
-    -webkit-transform: translate3d(0, -100px, 0) !important;
-    -moz-transform: translate3d(0, -100px, 0) !important;
-    transform: translate3d(0, -100px, 0) !important;
+    -webkit-transform: translate3d(0, -70px, 0) !important;
+    -moz-transform: translate3d(0, -70px, 0) !important;
+    transform: translate3d(0, -70px, 0) !important;
   }
 
   .mobile-footer {
