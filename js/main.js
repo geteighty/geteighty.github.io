@@ -44,7 +44,6 @@
 			changePreviewVideo($videoLink);
 
 			currentPageIndex = pageIndex;
-			console.log("scrolled %f", pageIndex);
 		}
 	}
 
