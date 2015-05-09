@@ -743,6 +743,8 @@ body.concept-video-playing .push-back-on-video-play {
 
   .iphone-container {
     bottom: -580px;
+    width: 360px;
+    overflow: hidden;
   }
 
   .viewing-page-2 .iphone-container,
