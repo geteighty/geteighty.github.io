@@ -701,6 +701,13 @@ body.concept-video-playing .push-back-on-video-play {
   }
 
   .page-wrapper {
+    position:fixed !important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding-top: 80px;
     overflow: hidden;
   }
 
@@ -747,8 +754,6 @@ body.concept-video-playing .push-back-on-video-play {
 
   .iphone-container {
     bottom: -580px;
-    width: 360px;
-    overflow: hidden;
   }
 
   .viewing-page-2 .iphone-container,
